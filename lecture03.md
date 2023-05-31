@@ -3,13 +3,13 @@
 
 APサーバ名：puma Version 5.6.5
 
-![APサーバ](https://github.com/hukuitappei/Raise_Tech_STD/blob/lecture3/AP_Server.PNG)
+![APサーバ](./AP_Server.PNG)
    
 2. AP サーバーを終了させた場合、引き続きアクセスできますか？
 
 接続できず
 
-![APサーバ終了時](https://github.com/hukuitappei/Raise_Tech_STD/blob/lecture3/finish_AP_Server.PNG)
+![APサーバ終了時](./finish_AP_Server.PNG)
     
 4. 結果を確認して、また AP サーバーを起動してください。
 
