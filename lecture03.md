@@ -9,7 +9,7 @@ APサーバ名：puma Version 5.6.5
 
 接続できず
 
-![APサーバ終了時]([./Finish_AP_Server.PNG])
+![APサーバ終了時](./Finish_AP_Server.PNG)
     
 4. 結果を確認して、また AP サーバーを起動してください。
 
