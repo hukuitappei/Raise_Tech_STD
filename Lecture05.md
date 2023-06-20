@@ -70,7 +70,9 @@ bundle install
 ```
 3. EC2環境に合わせて設定ファイルを変更
    シークレットキーを設定
+   
 3-1. config/database.ymlを修正
+```database.yml
   adapter: mysql2
   encoding: utf8mb4
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
@@ -88,10 +90,14 @@ socketを上記のように変更。
   password: RDS_PASSWORD
   host: RDS_END_POINT
   port: RDS_PORT
+```
+
 3-2.  /etc/nginx/conf.d/rails.confを編集
+```rails.d/conf
 　listen 80;
   server_name Elastic IP ADDRESS;
   root YOUR_APP_FILE_PATH/public;
+```
 
 MYSQL,NGINX,UNICORNが正常に設定できていると以下のように接続できる
 ![EC2status](./Lecture05_Pic/構築成功.PNG)
