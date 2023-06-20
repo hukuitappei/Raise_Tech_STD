@@ -18,8 +18,9 @@ Windows環境からTeratermにてSSH接続(ED25519を使用)
 ![ALBstatus](./Lecture05_Pic/Teraterm.PNG)
 
 2. EC2環境にアプリ動作環境を構築
-   ```
-   #アップデート+諸々インストール
+   *ローカルと同じ環境を構築するよう意識
+```EC2インストール
+#アップデート+諸々インストール
 sudo yum update
 sudo yum -y install git make gcc-c++ patch openssl-devel libyaml-devel libffi-devel libicu-devel libxml2 libxslt libxml2-devel libxslt-devel zlib-devel readline-devel
 
@@ -43,7 +44,7 @@ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-bu
 rbenv rehash
 
 #Ruby 3.1.2
-export -p TMPDIR="$HOME/"s
+export -p TMPDIR="$HOME/"
 
 rbenv install -v 3.1.2
 rbenv global 3.1.2
@@ -60,4 +61,45 @@ gem install bundler -v 2.3.14
 sudo amazon-linux-extras install -y  nginx1
 
 sudo yum -y  installl ImageMagick
-   ```
+
+githubからアプリをクローン
+git clone https://github.com/(Your_APP_Github_page)
+
+cd　/アプリ名
+bundle install
+```
+3. EC2環境に合わせて設定ファイルを変更
+   シークレットキーを設定
+3-1. config/database.ymlを修正
+  adapter: mysql2
+  encoding: utf8mb4
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: root
+  password: "YOURPASSWORD"
+  socket: /var/lib/mysql/mysql.sock
+socketを上記のように変更。
+*PASSWORDはMYSQL内で設定のこと
+
+*以下は本番環境用
+　production:
+  <<: *default
+  database: "YOUR_DataBase名"
+  username: RDS_USERNAME
+  password: RDS_PASSWORD
+  host: RDS_END_POINT
+  port: RDS_PORT
+3-2.  /etc/nginx/conf.d/rails.confを編集
+　listen 80;
+  server_name Elastic IP ADDRESS;
+  root YOUR_APP_FILE_PATH/public;
+
+MYSQL,NGINX,UNICORNが正常に設定できていると以下のように接続できる
+![EC2status](./Lecture05_Pic/構築成功.PNG)
+
+HTTPでELASTIC_IPに接続するとアプリ画面が確認できるはずである。
+![EC2status](./Lecture05_Pic/orange.PNG)
+
+できない場合はEC2のセキュリティからインバウンドルールを見直すべきである。
+
+今回の構成は以下の通りと考えている。
+![EC2status](./Lecture05_Pic/構成図.PNG)
