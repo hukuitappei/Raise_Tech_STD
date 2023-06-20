@@ -1,6 +1,6 @@
 # Lecture05
 
-#1 EC2・RDS・VPC・S3・ALBの設定
+1. EC2・RDS・VPC・S3・ALBの設定
 
 必要なAWSリソースを設定。(EC2/RDS/VPC/S3/ALB)
 
