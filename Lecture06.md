@@ -6,7 +6,8 @@
 　・AWSリージョン
 　・IPアドレス
 　・ユーザーエージェント
-```
+ 
+```CroudTrail.log
     "userIdentity": {
         "type": "IAMUser",
         "userName": "Raise_Tech_Lecture",
@@ -32,3 +33,5 @@
             "name": "default",
             "s3BucketName": "fukuisampleappbucket"}
 ```
+
+2. Cloudwatch Ararm
