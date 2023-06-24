@@ -34,5 +34,18 @@
             "s3BucketName": "fukuisampleappbucket"}
 ```
 
-2. Cloudwatch Ararm
+2. Cloudwatch Alarm
+
+   アラームとしてUNHEALTHYをカウントするアラームを設定した。
+   AMAZON SNSを利用してメッセージ送付
+   →　送信先はE-mailを設定。
+ 
+   ![Alarm_Param](./Lecture06_Pic/ALARM_PARAM.PNG)
+
+   ![Alarm_Count](./Lecture06_Pic/ALARM_Count.PNG)
+
+　 ![Amazon_SNS](./Lecture06_Pic/AMAZON_SNS.PNG)
+
+   ![TORIGER](./Lecture06_Pic/TORIG.PNG)
+  
    
