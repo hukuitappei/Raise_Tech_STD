@@ -55,3 +55,4 @@
 3. 請求
    RDSを使いすぎた？10000￥近い請求
 　　
+   ![COST](./Lecture06_PIC/COST.PNG)
