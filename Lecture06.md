@@ -54,7 +54,7 @@
 
 　　実際に届いたのは以下のメール
 
-   ![ALARM_EMAIL](./Lecture06_PIC/ALARM_EMAIL.PNG)
+   ![ALARM_EMAIL](./Lecture06_PIC/ALAM_EMAIL.PNG)
 
 3. 請求
    RDSを使いすぎた？10000￥近い請求
