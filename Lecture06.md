@@ -40,12 +40,12 @@
    AMAZON SNSを利用してメッセージ送付
    →　送信先はE-mailを設定。
  
-   ![Alarm_Param](./Lecture06_Pic/ALARM_PARAM.PNG)
+   ![Alarm_Param](./Lecture06_PIC/ALARM_PARAM.PNG)
 
-   ![Alarm_Count](./Lecture06_Pic/ALARM_Count.PNG)
+   ![Alarm_Count](./Lecture06_PIC/ALARM_Count.PNG)
 
-　 ![Amazon_SNS](./Lecture06_Pic/AMAZON_SNS.PNG)
+　 ![Amazon_SNS](./Lecture06_PIC/AMAZON_SNS.PNG)
 
-   ![TORIGER](./Lecture06_Pic/TORIG.PNG)
+   ![TORIGER](./Lecture06_PIC/TORIG.PNG)
   
    
