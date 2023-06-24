@@ -51,4 +51,7 @@
    ![ALARM_VIEW](./Lecture06_PIC/ALARM_INFO.PNG)
 
    OKの時は緑、MYSQLD,UNICORN,NGINXを切断した際は赤
-   
+
+3. 請求
+   RDSを使いすぎた？10000￥近い請求
+　　
