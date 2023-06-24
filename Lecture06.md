@@ -56,7 +56,7 @@
 
   2-1. アラーム時メール
    
-　![ERROR](./Lecture06_PIC/ALARM_EMAIL.PNG)
+　![ERROR](./Lecture06_PIC/ALAM_EMAIL.PNG)
 
   2-2. OK時メール
 
