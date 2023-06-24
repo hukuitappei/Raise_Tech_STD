@@ -42,7 +42,7 @@
  
    ![Alarm_Param](./Lecture06_PIC/ALARM_PARAM.PNG)
 
-   ![Alarm_Count](./Lecture06_PIC/ALARM_Count.PNG)
+   ![Alarm_Count](./Lecture06_PIC/ALARM_COUNT.PNG)
 
 　 ![Amazon_SNS](./Lecture06_PIC/AMAZON_SNS.PNG)
 
