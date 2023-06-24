@@ -54,6 +54,13 @@
 
 　　実際に届いたのは以下のメール
 
+  2-1. アラーム時メール
+   
+　![ERROR](./Lecture06_PIC/ALARM_EMAIL.PNG)
+
+  2-2. OK時メール
+
+  ![OK](./Lecture06_PIC/OK_EMAIL.PNG)
 
 
 3. 請求
