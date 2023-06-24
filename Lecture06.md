@@ -52,6 +52,10 @@
 
    OKの時は緑、MYSQLD,UNICORN,NGINXを切断した際は赤
 
+　　実際に届いたのは以下のメール
+
+   ![ALARM_EMAIL](./Lecture06_PIC/ALARM_EMAIL.PNG)
+
 3. 請求
    RDSを使いすぎた？10000￥近い請求
 　　
