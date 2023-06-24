@@ -48,4 +48,7 @@
 
    ![TORIGER](./Lecture06_PIC/TORIG.PNG)
   
+   ![ALARM_VIEW](./Lecture06_PIC/ALARM_INFO.PNG)
+
+   OKの時は緑、MYSQLD,UNICORN,NGINXを切断した際は赤
    
