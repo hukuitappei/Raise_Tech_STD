@@ -1,0 +1,28 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Parameter File of S3
+
+Parameters:
+  ProjectName:
+    Description: this is base name.
+    Type: String
+    Default: "TESTPRJ"
+
+Resources:
+  S3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      AccessControl: Private
+      #バケット名が!Sub "${ProjectName}-**"だと通らなくなったので
+      BucketName: s3-20240106
+  
+#出力　各設定を出力するように設定
+Outputs:
+  S3Bucket:
+    Value: !Ref S3Bucket
+    Export:
+      Name: !Sub "${ProjectName}-s3-name"
