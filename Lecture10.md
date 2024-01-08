@@ -22,7 +22,7 @@ Textから以下の通りの課題があり、挑戦。
 
    Lecture10/Template/ALB.yml
    
-  2-2. S3が作成できず、調べたところIAMロールを与えないとダメとのことでIAMロールを与える部分も作成。
+  2-2. S3が作成できず、調べたところIAMロールがないとのことでIAMロールを与える部分も作成。
      
    Lecture10/Template/IAMROLE.yml
    
@@ -30,6 +30,5 @@ Textから以下の通りの課題があり、挑戦。
   
    Lecture10/Template/SECURITY_FILE.yml
 
-  2-4. 最後にEC2とやり取りするためのALBを作成
-   
-4. 
+3. 作成した状態
+   ![ENV](./Lecture10/PICTURE/STACK.PNG)
