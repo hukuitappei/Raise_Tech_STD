@@ -17,6 +17,6 @@ Textから以下の通りの課題があり、挑戦。
   2-2. S3が作成できず、調べたところIAMロールを与えないとダメとのことで
    　　IAMロールを与える部分も作成。
    Lecture10/Template/IAMROLE.yml
-   
-
+  2-3. 通信に関するセキュリティファイルがばらばらで探しづらかったので一つにまとめた。
+   Lecture10/Template/SECURITY_FILE.yml
 4. 
