@@ -31,4 +31,15 @@ Textから以下の通りの課題があり、挑戦。
    Lecture10/Template/SECURITY_FILE.yml
 
 3. 作成した状態
+   
    ![ENV](./Lecture10/PICTURE/STACK.PNG)
+
+   ![ENV](./Lecture10/PICTURE/VPC.PNG)
+
+   ![ENV](./Lecture10/PICTURE/RDS.PNG)
+
+   ![ENV](./Lecture10/PICTURE/S3.PNG)
+
+   ![ENV](./Lecture10/PICTURE/EC2.PNG)
+
+   ![ENV](./Lecture10/PICTURE/ALB.PNG)
