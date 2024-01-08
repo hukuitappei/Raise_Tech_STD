@@ -43,3 +43,9 @@ Textから以下の通りの課題があり、挑戦。
    ![ENV](./Lecture10/PICTURE/EC2.PNG)
 
    ![ENV](./Lecture10/PICTURE/ALB.PNG)
+
+   ![ENV](./Lecture10/PICTURE/ALB-Status.PNG)
+   
+   ![ENV](./Lecture10/PICTURE/SECURITYGROUP.PNG)
+
+   ![ENV](./Lecture10/PICTURE/IAM_ROLE.PNG)
