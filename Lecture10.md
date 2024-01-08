@@ -31,6 +31,7 @@ Textから以下の通りの課題があり、挑戦。
    Lecture10/Template/SECURITY_FILE.yml
 
 3. 作成した状態
+   以下のように作成に成功しています。
    
    ![ENV](./Lecture10/PICTURE/STACK.PNG)
 
@@ -38,7 +39,7 @@ Textから以下の通りの課題があり、挑戦。
 
    ![ENV](./Lecture10/PICTURE/RDS.PNG)
 
-   ![ENV](./Lecture10/PICTURE/S3.PNG)
+   ![ENV](./Lecture10/PICTURE/S3_bucket.PNG)
 
    ![ENV](./Lecture10/PICTURE/EC2.PNG)
 
@@ -47,5 +48,11 @@ Textから以下の通りの課題があり、挑戦。
    ![ENV](./Lecture10/PICTURE/ALB-Status.PNG)
    
    ![ENV](./Lecture10/PICTURE/SECURITYGROUP.PNG)
+
+   ![ENV](./Lecture10/PICTURE/SecurityGroup-ALB.PNG)
+
+   ![ENV](./Lecture10/PICTURE/SecurityGroup-RDS.PNG)
+
+   ![ENV](./Lecture10/PICTURE/SecurityGroup-EC2.PNG)
 
    ![ENV](./Lecture10/PICTURE/IAM_ROLE.PNG)
