@@ -56,3 +56,11 @@ Textから以下の通りの課題があり、挑戦。
    ![ENV](./Lecture10/PICTURE/SecurityGroup-EC2.PNG)
 
    ![ENV](./Lecture10/PICTURE/IAM_ROLE.PNG)
+
+4. 作成した感想
+   
+   とにかく時間がかかってしまった。
+   
+   Cloud Formatiom・・・。大敵。
+
+   S3BucketのNameが何度も弾かれて心が折れそうになった。
