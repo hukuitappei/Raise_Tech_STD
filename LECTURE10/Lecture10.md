@@ -10,6 +10,7 @@ Textから以下の通りの課題があり、挑戦。
 ![ENV](./PICTURE/構成図.PNG)
 
 2. 必要な要素ごとにCloud Formationを作成する。
+   
 　2-1. VPC,RDS,S3,EC2,ALBが必要なので、それぞれ現環境に合わせて作成
    
    Lecture10/Template/VPC.yml
@@ -26,7 +27,7 @@ Textから以下の通りの課題があり、挑戦。
   
    Lecture10/Template/IAMROLE.yml
 
- 2-3. 通信に関するセキュリティファイルがばらばらで探しづらかったので一つにまとめた。
+　2-3. 通信に関するセキュリティファイルがばらばらで探しづらかったので一つにまとめた。
  
    Lecture10/Template/SECURITY_FILE.yml
 
