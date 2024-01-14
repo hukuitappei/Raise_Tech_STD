@@ -6,6 +6,6 @@ Textから以下の通りの課題があり、挑戦。
 
 1. 目的となる環境の確認
 
-![ENV](./Lecture10/PICTURE/構成図.PNG)
+![ENV](./PICTURE/構成図.PNG)
 
 2. 
