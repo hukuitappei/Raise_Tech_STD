@@ -32,24 +32,24 @@ Textから以下の通りの課題があり、挑戦。
 3. 作成した状態
 以下のように作成に成功しています。
 
-   ![ENV](./Lecture10/PICTURE/STACK.PNG)
+   ![ENV](./PICTURE/STACK.PNG)
 
-   ![ENV](./Lecture10/PICTURE/VPC.PNG)
+   ![ENV](./PICTURE/VPC.PNG)
 
-   ![ENV](./Lecture10/PICTURE/RDS.PNG)
+   ![ENV](./PICTURE/RDS.PNG)
 
-   ![ENV](./Lecture10/PICTURE/S3_bucket.PNG)
+   ![ENV](./PICTURE/S3_bucket.PNG)
 
-   ![ENV](./Lecture10/PICTURE/EC2.PNG)
+   ![ENV](./PICTURE/EC2.PNG)
 
-   ![ENV](./Lecture10/PICTURE/SECURITYGROUP.PNG)
+   ![ENV](./PICTURE/SECURITYGROUP.PNG)
 
-   ![ENV](./Lecture10/PICTURE/SecurityGroup-ALB.PNG)
+   ![ENV](./PICTURE/SecurityGroup-ALB.PNG)
 
-   ![ENV](./Lecture10/PICTURE/SecurityGroup-RDS.PNG)
+   ![ENV](./PICTURE/SecurityGroup-RDS.PNG)
 
-   ![ENV](./Lecture10/PICTURE/SecurityGroup-EC2.PNG)
+   ![ENV](./PICTURE/SecurityGroup-EC2.PNG)
 
-   ![ENV](./Lecture10/PICTURE/IAM_ROLE.PNG)
+   ![ENV](./PICTURE/IAM_ROLE.PNG)
 
    
