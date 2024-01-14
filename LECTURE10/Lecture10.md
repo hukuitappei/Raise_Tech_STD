@@ -8,4 +8,4 @@ Textから以下の通りの課題があり、挑戦。
 
 ![ENV](./PICTURE/構成図.PNG)
 
-2. 
+2. 必要な要素ごとにCloud Formationを作成する。
