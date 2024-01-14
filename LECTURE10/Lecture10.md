@@ -22,7 +22,7 @@ Textから以下の通りの課題があり、挑戦。
 
    Lecture10/Template/ALB.yml
    
-  2-2.  2-2. S3が作成できず、調べたところIAMロールがないとのことでIAMロールを与える部分も作成。
+  2-2. S3が作成できず、調べたところIAMロールがないとのことでIAMロールを与える部分も作成。
   
    Lecture10/Template/IAMROLE.yml
 
