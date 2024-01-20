@@ -7,7 +7,7 @@ Textから以下の通りの課題があり、挑戦。
 
 1. 目的となる環境の確認
 
-   ![ENV](./PICTURE/構成図.PNG)
+   ![ENV](./PICTURE/構成図.png)
 
 2. 必要な要素ごとにCloud Formationを作成する。
 
