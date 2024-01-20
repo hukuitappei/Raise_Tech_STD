@@ -34,6 +34,8 @@ Textから以下の通りの課題があり、挑戦。
 3. 作成した状態
 以下のように作成に成功しています。
 
+   ![ENV](./PICTURE/EC2-RDS接続.PNG)
+
    ![ENV](./PICTURE/STACK.PNG)
 
    ![ENV](./PICTURE/VPC.PNG)
