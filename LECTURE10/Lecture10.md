@@ -46,9 +46,15 @@ Textから以下の通りの課題があり、挑戦。
 
    ![ENV](./PICTURE/TEST-VPC-PARAM.PNG)
 
+     3-4. TEST-RDS
+
    ![ENV](./PICTURE/TEST-RDS.PNG)
 
+     3-5. TEST-RDSパラメータ
+
    ![ENV](./PICTURE/TEST-RDS-PARAM.PNG)
+
+     3-6. TEST-S3バケット
 
    ![ENV](./PICTURE/S3-bucket.PNG)
 
