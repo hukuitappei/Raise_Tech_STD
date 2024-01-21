@@ -34,9 +34,15 @@ Textから以下の通りの課題があり、挑戦。
 3. 作成した状態
 以下のように作成に成功しています。
 
+     3-1. Tera Term EC2→RDS
+   
    ![ENV](./PICTURE/EC2-RDS接続.PNG)
 
+     3-2. Cloud Formation作成成功
+   
    ![ENV](./PICTURE/STACK.PNG)
+   
+     3-3. TEST-VPCパラメータ
 
    ![ENV](./PICTURE/TEST-VPC-PARAM.PNG)
 
