@@ -58,7 +58,11 @@ Textから以下の通りの課題があり、挑戦。
 
    ![ENV](./PICTURE/S3-bucket.PNG)
 
+　　  3-7. TEST-EC2
+
    ![ENV](./PICTURE/TEST-EC2.PNG)
+   
+      3-8. TEST-EC2パラメータ
 
    ![ENV](./PICTURE/TEST-EC2-PARAM.PNG)
 
