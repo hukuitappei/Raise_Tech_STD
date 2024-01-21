@@ -44,7 +44,7 @@ Textから以下の通りの課題があり、挑戦。
 
    ![ENV](./PICTURE/TEST-RDS-PARAM.PNG)
 
-   ![ENV](./PICTURE/S3_bucket.PNG)
+   ![ENV](./PICTURE/S3-bucket.PNG)
 
    ![ENV](./PICTURE/TEST-EC2.PNG)
 
