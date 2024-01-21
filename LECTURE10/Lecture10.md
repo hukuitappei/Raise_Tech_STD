@@ -58,26 +58,39 @@ Textから以下の通りの課題があり、挑戦。
 
    ![ENV](./PICTURE/S3-bucket.PNG)
 
-　　  3-7. TEST-EC2
+　   3-7. TEST-EC2
 
    ![ENV](./PICTURE/TEST-EC2.PNG)
    
-      3-8. TEST-EC2パラメータ
+     3-8. TEST-EC2パラメータ
 
    ![ENV](./PICTURE/TEST-EC2-PARAM.PNG)
 
+     3-9. TEST-セキュリティ
+
    ![ENV](./PICTURE/TEST-SECURITY.PNG)
+
+   　3-10. TEST-セキュリティ-ALB
 
    ![ENV](./PICTURE/SecurityGroup-ALB.PNG)
 
+     3-11. TEST-セキュリティ-RDS
+
    ![ENV](./PICTURE/SecurityGroup-RDS.PNG)
+
+     3-12. TEST-セキュリティ-EC2
 
    ![ENV](./PICTURE/SecurityGroup-EC2.PNG)
 
+     3-13. TEST-IAMロール
+
    ![ENV](./PICTURE/TEST-ROLE.PNG)
+
+     3-14. TEST-ALB
 
    ![ENV](./PICTURE/TEST-ALB.PNG)
 
  5. 作成して感じたこと
    　各種セキュリティの設定など色々調べながらやったがこれでよいのかわからなかった。
-   　S3のName設定がうまくできず、苦労した。
+    
+   　自動で作成した環境にSSH接続ができたときはうれしかった。
