@@ -38,15 +38,19 @@ Textから以下の通りの課題があり、挑戦。
 
    ![ENV](./PICTURE/STACK.PNG)
 
-   ![ENV](./PICTURE/VPC.PNG)
+   ![ENV](./PICTURE/TEST-VPC-PARAM.PNG)
 
-   ![ENV](./PICTURE/RDS.PNG)
+   ![ENV](./PICTURE/TEST-RDS.PNG)
+
+   ![ENV](./PICTURE/TEST-RDS-PARAM.PNG)
 
    ![ENV](./PICTURE/S3_bucket.PNG)
 
-   ![ENV](./PICTURE/EC2.PNG)
+   ![ENV](./PICTURE/TEST-EC2.PNG)
 
-   ![ENV](./PICTURE/SECURITYGROUP.PNG)
+   ![ENV](./PICTURE/TEST-EC2-PARAM.PNG)
+
+   ![ENV](./PICTURE/TEST-SECURITY.PNG)
 
    ![ENV](./PICTURE/SecurityGroup-ALB.PNG)
 
@@ -54,7 +58,9 @@ Textから以下の通りの課題があり、挑戦。
 
    ![ENV](./PICTURE/SecurityGroup-EC2.PNG)
 
-   ![ENV](./PICTURE/IAM_ROLE.PNG)
+   ![ENV](./PICTURE/TEST-ROLE.PNG)
+
+   ![ENV](./PICTURE/TEST-ALB.PNG)
 
  5. 作成して感じたこと
    　各種セキュリティの設定など色々調べながらやったがこれでよいのかわからなかった。
