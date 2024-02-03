@@ -1,0 +1,82 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Parameter File of Security
+Parameters:
+  ProjectName:
+    Description: this is base name.
+    Type: String
+    Default: TESTPRJ
+  TESTIP:
+    Type: String
+    Default: "10.255.255.255/32"
+
+Resources:
+  #各種セキュリティグループ設定
+  #ALBのセキュリティ
+  ALBSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupName: !Sub "${ProjectName}-ALBSecurityGroup"
+      GroupDescription: ALBSecurityGroup
+      VpcId: !ImportValue VPCID
+      SecurityGroupIngress:
+        - CidrIp: 0.0.0.0/0
+          IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+
+      Tags:
+        - Key: Name
+          Value: !Sub "${ProjectName}-ALBSecurityGroup"
+  #EC2のセキュリティ
+  EC2SecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupName: !Sub "${ProjectName}-EC2SecurityGroup"
+      GroupDescription: EC2SecurityGroup
+      VpcId: !ImportValue VPCID 
+      #インバウンドルール設定
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: !Ref TESTIP
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0
+      Tags:
+        - Key: Name
+          Value: !Sub "${ProjectName}-EC2SecurityGroup"
+
+  #RDSのセキュリティ
+  RDSSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties: 
+      GroupName: !Sub "${ProjectName}-RDSSecurityGroup"
+      GroupDescription: RDSSecurityGroup
+      VpcId: !ImportValue VPCID 
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 3306
+          ToPort: 3306
+          SourceSecurityGroupId: !Ref EC2SecurityGroup
+      Tags:
+        - Key: Name
+          Value: !Sub "${ProjectName}-RDSSecurityGroup"
+
+Outputs:
+#EC2セキュリティグループ
+  EC2SecurityGroup:
+    Value: !Ref EC2SecurityGroup
+    Export: 
+      Name: EC2SecurityGroupID
+#RDSセキュリティグループ
+  RDSSecurityGroup:
+    Value: !Ref RDSSecurityGroup
+    Export: 
+      Name: RDSSecurityGroupID
+#ALBセキュリティグループ
+  ALBSecurityGroup:
+    Value: !Ref ALBSecurityGroup
+    Export: 
+      Name: ALBSecurityGroupID
