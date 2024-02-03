@@ -1,0 +1,51 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Parameter File of ALB
+Parameters:
+  ProjectName:
+    Description: this is base name.
+    Type: String
+    Default: "TESTPRJ"
+
+Resources: 
+  #ALB
+  ALBdata:
+    Type: AWS::ElasticLoadBalancingV2::LoadBalancer
+    Properties:
+      IpAddressType: ipv4
+      Name: !Sub "${ProjectName}-ALB"
+      SecurityGroups:
+        - !ImportValue ALBSecurityGroupID
+      Subnets:
+        - !ImportValue PriSubNAID
+        - !ImportValue PriSubNCID
+      Tags:
+        - Key: Name
+          Value: !Sub "${ProjectName}-ALB"
+  #Listener
+  Listener:
+    Type: AWS::ElasticLoadBalancingV2::Listener
+    Properties:
+      DefaultActions:
+        - Type: forward
+          ForwardConfig:
+            TargetGroups:
+              - TargetGroupArn: !Ref TargetGroupEC2a
+                Weight: 1
+      Port: 80
+      Protocol: HTTP
+      LoadBalancerArn: !Ref ALBdata
+
+  #Target Group(EC2と)
+  TargetGroupEC2a:
+    Type: AWS::ElasticLoadBalancingV2::TargetGroup
+    Properties:
+      VpcId: !ImportValue VPCID
+      Port: 80
+      Protocol: HTTP
+      TargetType: instance
+      Tags:
+        - Key: Name
+          Value: !Sub "${ProjectName}-ALBTargetGroup"
+      Targets:
+        - Id: !ImportValue EC2ID
+      
